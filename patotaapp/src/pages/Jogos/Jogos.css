@@ -1,0 +1,127 @@
+.jogos-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.jogos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.jogo-card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.jogo-card:hover {
+  background: #f5f5f5;
+}
+
+.status {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status.realizado {
+  background: #ddd;
+  color: #555;
+}
+
+.status.proximo {
+  background: #1e7f3b;
+  color: white;
+}
+.criar-jogo-page {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.criar-jogo-form {
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.btn-primary {
+  margin-top: 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #0f9d58;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #0c7c44;
+}
+/* tela de criar jogo */
+.page {
+  padding: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 420px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.page h1 {
+  margin-bottom: 16px;
+}
+
+.card label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.card button {
+  margin-top: 20px;
+  width: 100%;
+}

@@ -1,0 +1,29 @@
+.cadastro-container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cadastro-content {
+  width: 100%;
+  max-width: 360px;
+  padding: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.cadastro-content input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.cadastro-content span {
+  color: #00a651;
+  cursor: pointer;
+}

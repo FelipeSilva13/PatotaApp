@@ -1,0 +1,10 @@
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #16a34a;
+  font-weight: 600;
+}

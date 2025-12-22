@@ -1,0 +1,51 @@
+.next-game-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.next-game-card h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.game-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.game-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirmed {
+  font-weight: bold;
+  color: #1e7f3b;
+}
+
+.btn-confirm {
+  background: #1e7f3b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.btn-confirm:hover {
+  opacity: 0.9;
+}
+
+.btn-confirm.active {
+  background: #555;
+}
+
