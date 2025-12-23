@@ -73,3 +73,12 @@
 .chat-input button:hover {
   background: #15803d;
 }
+@media (max-width: 768px) {
+  .chat-container {
+    height: calc(100vh - 60px);
+  }
+
+  .message {
+    max-width: 85%;
+  }
+}

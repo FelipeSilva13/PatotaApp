@@ -50,3 +50,13 @@
 .perfil-form button {
   margin-top: 20px;
 }
+@media (max-width: 768px) {
+  .perfil-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perfil-form {
+    width: 100%;
+  }
+}

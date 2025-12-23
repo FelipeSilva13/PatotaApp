@@ -8,3 +8,8 @@
   color: #16a34a;
   font-weight: 600;
 }
+@media (max-width: 768px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}

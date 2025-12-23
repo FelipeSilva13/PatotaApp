@@ -13,3 +13,20 @@
 .content {
   padding: 20px;
 }
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+  }
+
+  .dashboard-content {
+    padding: 16px;
+  }
+}

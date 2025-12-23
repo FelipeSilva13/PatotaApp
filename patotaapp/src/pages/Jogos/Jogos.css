@@ -125,3 +125,14 @@
   margin-top: 20px;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .jogos-table table {
+    display: none;
+  }
+
+  .jogos-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
