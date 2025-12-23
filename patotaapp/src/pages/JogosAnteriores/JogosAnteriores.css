@@ -1,0 +1,20 @@
+.jogos-anteriores {
+  max-width: 900px;
+}
+
+.jogos-anteriores h2 {
+  margin-bottom: 20px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.history-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 0 0 1px #e5e7eb;
+}

@@ -10,9 +10,8 @@ import Jogos from "./pages/Jogos/Jogos";
 import Chat from "./pages/Chat/Chat";
 import Perfil from "./pages/Perfil/Perfil";
 import CriarJogo from "./pages/Jogos/CriarJogo";
-
-
-
+import DetalhesJogo from "./pages/DetalhesJogo/DetalhesJogo";
+import JogosAnteriores from "./pages/JogosAnteriores/JogosAnteriores";
 
 
 export default function App() {
@@ -28,8 +27,10 @@ export default function App() {
         <Route path="/chat" element={<Dashboard><Chat /></Dashboard>} />
         <Route path="/perfil" element={<Dashboard><Perfil /></Dashboard>} />
         <Route path="/criar/jogo" element={<Dashboard><CriarJogo /></Dashboard>} />
-       
-
+        <Route path="/jogos" element={<Dashboard><Jogos /></Dashboard>} />
+        <Route path="/jogo/detalhes" element={<Dashboard><DetalhesJogo /></Dashboard>} />
+        <Route path="/jogos/anteriores" element={<Dashboard><JogosAnteriores /></Dashboard>} />
+        <Route path="/perfil" element={<Dashboard><Perfil /></Dashboard>} />
       
       </Routes>
     </BrowserRouter>

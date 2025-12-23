@@ -1,0 +1,47 @@
+.table-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 0 0 1px #e5e7eb;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  background: #f9fafb;
+  color: #374151;
+}
+
+td {
+  padding: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.confirmed {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.btn-edit {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
