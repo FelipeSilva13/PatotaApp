@@ -1,16 +1,106 @@
-# React + Vite
+PatotaApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web para organização de jogos entre amigos ("patota"), com confirmação de presença, posições, estatísticas e chat.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+src/
+├── components/
+│ ├── Layout/
+│ │ ├── DashboardLayout.jsx
+│ │ ├── Dashboard.css
+│ │ └── Sidebar.jsx
+│ ├── Dashboard/
+│ │ └── StatCard.jsx
+│ ├── Statistics/
+│ │ └── StatisticsCard.jsx
+│ └── Welcome/
+│ └── Welcome.jsx
+│
+├── pages/
+│ ├── Home/
+│ ├── Login/
+│ ├── Cadastro/
+│ ├── ForgotPassword/
+│ ├── Jogos/
+│ ├── Chat/
+│ └── Perfil/
+│
+├── styles/
+│ └── global.css
+│
+├── App.jsx
+└── main.jsx
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+Visão Geral
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O PatotaApp permite que usuários:
+
+Visualizem o próximo jogo
+Confirmem presença e posição
+Acompanhem estatísticas
+Visualizem jogos anteriores
+Conversem via chat
+Gerenciem seu perfil
+
+Projeto desenvolvido com foco em boas práticas de frontend, componentização e estrutura escalável, visando futura integração com backend em Java (Spring Boot).
+
+Telas do Sistema
+
+Welcome
+Login
+Cadastro
+Esqueci Minha Senha
+Dashboard / Home
+Lista de Jogos
+Criar Jogo
+Confirmar Presença
+Chat
+Perfil do Usuário
+
+Tecnologias Utilizadas
+
+React + Vite
+React Router DOM
+CSS puro (componentizado + global)
+JavaScript (ES6+)
+Estilização
+Estilos locais por componente (.css por tela/componente)
+Estilo global em styles/global.css
+Layout responsivo (desktop e mobile)
+Dashboard com sidebar fixa e conteúdo dinâmico
+
+Rotas Principais
+
+<Route path="/" element={<Welcome />} />
+<Route path="/login" element={<Login />} />
+<Route path="/cadastro" element={<Cadastro />} />
+<Route path="/esqueci-senha" element={<ForgotPassword />} />
+<Route path="/home" element={<DashboardLayout><Home /></DashboardLayout>} />
+
+ Responsividade
+
+Sidebar adaptável
+Layout flexível com flexbox
+Cards responsivos
+Preparado para mobile-first
+
+Próximas Evoluções
+
+Integração com backend (Spring Boot + MySQL)
+Autenticação com JWT
+Controle de permissões
+Notificações
+Deploy (Vercel / Netlify)
+
+Autor
+
+Felipe Silva
+Técnico em Eletrotécnica e Mecatrônica
+Graduando em Análise e Desenvolvimento de SistemasFoco em desenvolvimento Java Backend + Frontend Web
+
+Licença
+
+Projeto acadêmico e de portfólio. Uso livre para fins de estudo.
+
