@@ -1,7 +1,10 @@
 import { useState } from "react";
+import api from "../../api/Api";
+import { useNavigate } from "react-router-dom";
 import "./Jogos.css";
 
 export default function CriarJogo() {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     data: "",
     hora: "",
@@ -16,9 +19,16 @@ export default function CriarJogo() {
     });
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    console.log("Novo jogo:", form);
+    try {
+      await api.post("/jogos", form);
+      alert("Jogo criado com sucesso!");
+      navigate("/history"); // ou onde listar os jogos
+    } catch (error) {
+      console.error("Erro ao criar jogo:", error);
+      alert("Erro ao criar jogo");
+    }
   }
 
   return (

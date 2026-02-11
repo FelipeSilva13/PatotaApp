@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo branco apenas na área das pessoas -->
+  <rect x="30" y="50" width="340" height="250" rx="20" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+  
+  <!-- Grupo 1: Pessoa da esquerda -->
+  <circle cx="100" cy="120" r="40" fill="#2c3e50"/>
+  <path d="M 70 180 Q 70 220 100 240 Q 130 220 130 180 Z" fill="#2c3e50"/>
+  
+  <!-- Grupo 2: Pessoa do centro (maior) -->
+  <circle cx="200" cy="100" r="50" fill="#2c3e50"/>
+  <path d="M 160 170 Q 160 230 200 260 Q 240 230 240 170 Z" fill="#2c3e50"/>
+  
+  <!-- Grupo 3: Pessoa da direita -->
+  <circle cx="300" cy="120" r="40" fill="#2c3e50"/>
+  <path d="M 270 180 Q 270 220 300 240 Q 330 220 330 180 Z" fill="#2c3e50"/>
+  
+  <!-- Texto PatotaApp -->
+  <text x="200" y="380" font-family="Arial, sans-serif" font-size="72" font-weight="700" text-anchor="middle" fill="#2c3e50">PatotaApp</text>
+</svg>

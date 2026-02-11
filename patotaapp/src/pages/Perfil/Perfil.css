@@ -50,6 +50,29 @@
 .perfil-form button {
   margin-top: 20px;
 }
+
+.success-msg {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background-color: #e6ffe6;
+  color: #22c55e;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  animation: slideIn 0.3s ease-in;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 768px) {
   .perfil-card {
     flex-direction: column;

@@ -1,47 +1,45 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import api from "../../api/Api";
 import "./Jogos.css";
 
 export default function Jogos() {
-  const jogos = [
-    {
-      id: 1,
-      data: "10/12/2024",
-      hora: "19:00",
-      local: "Quadra A",
-      status: "realizado"
-    },
-    {
-      id: 2,
-      data: "14/12/2024",
-      hora: "16:00",
-      local: "Campo Centro Esportivo",
-      status: "proximo"
-    }
-  ];
+  const [jogos, setJogos] = useState([]);
+
+  useEffect(() => {
+    api
+      .get("/jogos")
+      .then((resp) => setJogos(resp.data || []))
+      .catch((error) =>
+        console.error("Erro ao buscar jogos:", error)
+      );
+  }, []);
 
   return (
     <div className="jogos-page">
       <h2>Jogos</h2>
 
       <div className="jogos-list">
-        {jogos.map((jogo) => (
-          <Link
-            key={jogo.id}
-            to={`/jogos/${jogo.id}`}
-            className="jogo-card"
-          >
-            <div>
-              <strong>{jogo.data}</strong> - {jogo.hora}
-              <p>{jogo.local}</p>
-            </div>
+        {jogos.length === 0 ? (
+          <p>Nenhum jogo encontrado</p>
+        ) : (
+          jogos.map((jogo) => (
+            <Link
+              key={jogo.id}
+              to={`/jogos/${jogo.id}`}
+              className="jogo-card"
+            >
+              <div>
+                <strong>{jogo.data}</strong>
+                <p>{jogo.local}</p>
+              </div>
 
-            <span className={`status ${jogo.status}`}>
-              {jogo.status === "realizado"
-                ? "Realizado"
-                : "Próximo"}
-            </span>
-          </Link>
-        ))}
+              <span className="status proximo">
+                Próximo
+              </span>
+            </Link>
+          ))
+        )}
       </div>
     </div>
   );

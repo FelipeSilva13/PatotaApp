@@ -1,6 +1,6 @@
-import StatCard from "../../components/Dashboard/StatCard";
 import StatisticsCard from "../../components/Statistics/Statistics";
 import NextGameCard from "../../components/NextGameCard/NextGameCard";
+import SorteioCard from "../../components/Sorteio/SorteioCard";
 
 import "./Home.css";
 
@@ -17,13 +17,7 @@ export default function Home() {
           confirmedCount={12}
         />
 
-        <StatCard title="Total de Jogadores">
-          <p className="highlight">28</p>
-        </StatCard>
-
-        <StatCard title="Presença Média">
-          <p className="highlight">82%</p>
-        </StatCard>
+        <SorteioCard />
       </div>
 
       {/* Estatísticas embaixo */}
