@@ -1,0 +1,15 @@
+services:
+  server:
+    build:
+      context: .
+      args:
+        NODE_VERSION: 22.15.0
+    environment:
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: true
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run dev -- --host 0.0.0.0

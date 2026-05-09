@@ -32,7 +32,6 @@ src/
 └── main.jsx
 
 
-
 Visão Geral
 
 O PatotaApp permite que usuários:
